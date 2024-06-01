@@ -2,29 +2,39 @@ package br.upe;
 
 public class Request {
     private String IP_Adress;
-    private String dateHour;
+    private int year;
+    private String month;
     private String solicitation;
-    private String status;
-    private String length;
+    private String typeRequest;
+    private int status;
+    private int length;
     private String OperationalSystem;
 
     public String getIP_Adress() {
         return IP_Adress;
     }
 
-    public String getDateHour() {
-        return dateHour;
+    public String getTypeRequest() {
+        return typeRequest;
+    }
+
+    public String getMonth() {
+        return month;
+    }
+
+    public int getYear() {
+        return year;
     }
 
     public String getSolicitation() {
         return solicitation;
     }
 
-    public String getStatus() {
+    public int getStatus() {
         return status;
     }
 
-    public String getLength() {
+    public int getLength() {
         return length;
     }
 
@@ -32,26 +42,32 @@ public class Request {
         return OperationalSystem;
     }
 
-    // Set Methods - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
     public void setIP_Adress(String ip) {
         this.IP_Adress = ip;
     }
 
-    public void setDateHour(String dateHour) {
-        this.dateHour = dateHour;
+    public void setMonth(String month) {
+        this.month = month;
+    }
+
+    public void setYear(String year) {
+        this.year = Integer.parseInt(year);
     }
 
     public void setSolicitation(String solicitation) {
         this.solicitation = solicitation;
     }
 
+    public void setTypeRequest(String typeRequest) {
+        this.typeRequest = typeRequest;
+    }
+
     public void setStatus(String status) {
-        this.status = status;
+        this.status = Integer.parseInt(status);
     }
 
     public void setLength(String length) {
-        this.length = length;
+        this.length = Integer.parseInt(length);
     }
 
     public void setOperationalSystem(String operationalSystem) {

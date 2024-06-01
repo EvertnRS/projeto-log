@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws IOException {
         LogData l = new LogData();
-        l.read("./access.log");
+        l.read("./projeto-log/src/files/access.log");
         Scanner sc = new Scanner(System.in);
         int option = 0;
         do {
