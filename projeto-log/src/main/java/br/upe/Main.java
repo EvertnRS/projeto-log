@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        LogData l = new LogData();
-        l.read("./projeto-log/src/files/access.log");
+        LogData log = new LogData();
+        log.read("./projeto-log/src/files/access.log");
         Scanner sc = new Scanner(System.in);
         int option = 0;
         do {
@@ -20,16 +20,16 @@ public class Main {
 
             switch (option) {
                 case 1:
-                    l.write("recursosGrandes");
+                    log.write("recursosGrandes");
                     break;
                 case 2:
-                    l.write("naoRespondidos");
+                    log.write("naoRespondidos");
                     break;
                 case 3:
-                    l.write("OS");
+                    log.write("OS");
                     break;
                 case 4:
-                    System.out.println(l.makeAverage());
+                    System.out.println(log.makeAverage());
                     break;
                 case 0:
                     System.out.println("Exiting...");

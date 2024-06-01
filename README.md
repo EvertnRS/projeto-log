@@ -88,4 +88,4 @@ Com base no feedback do professor, as classes do projeto foram reestruturadas e 
 
 - [Everton Rodrigues](https://github.com/EvertnRS/)
 - [Kaio Viana](https://github.com/ok-kioo)
-- [Thulio Aleixo]()
+- [Thulio Aleixo](https://github.com/Thulio05)
