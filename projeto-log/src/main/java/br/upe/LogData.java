@@ -20,10 +20,9 @@ public class LogData extends Request {
     }
 
     public void read(String fileName) {
-        ArrayList<LogData> logDataList = new ArrayList<>();
+        ArrayList<LogData> list = new ArrayList<>();
         try {
             BufferedReader reader = new BufferedReader(new FileReader(fileName));
-
             String line = reader.readLine();
 
             Pattern patternLine = Pattern.compile(
@@ -51,7 +50,7 @@ public class LogData extends Request {
                     logData.setStatus(matcherLine.group(4));
                     logData.setLength(matcherLine.group(5));
                     logData.setOperationalSystem(matcherLine.group(8));
-                    logDataList.add(logData);
+                    list.add(logData);
                 }
 
                 line = reader.readLine();
@@ -63,7 +62,7 @@ public class LogData extends Request {
             readerEx.printStackTrace();
         }
 
-        setFileList(logDataList);
+        setFileList(list);
     }
 
     public float makeAverage() {
@@ -96,7 +95,7 @@ public class LogData extends Request {
                 rp.writeOs(this.logDataList);
                 break;
             default:
-                System.out.println("Tipo de Relatório Inválido");
+                System.out.println("Invalid Report Type");
                 break;
         }
     }

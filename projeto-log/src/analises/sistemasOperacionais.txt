@@ -1,0 +1,7 @@
+OS, Percentage
+Windows, 83.80915
+Macintosh, 2.7139225
+Ubuntu, 2.0905018
+Fedora, 0.08363944
+Mobile, 3.5290031
+Others, 7.773786

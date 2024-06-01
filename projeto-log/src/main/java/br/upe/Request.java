@@ -4,8 +4,8 @@ public class Request {
     private String IP_Adress;
     private int year;
     private String month;
-    private String solicitation;
     private String typeRequest;
+    private String solicitation;
     private int status;
     private int length;
     private String OperationalSystem;

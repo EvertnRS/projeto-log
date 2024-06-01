@@ -15,7 +15,7 @@ public class Main {
             System.out.println("2 - Não respondidos");
             System.out.println("3 - % de requisições por SO");
             System.out.println("4 - Média das requisições POST");
-            System.out.println("0 - Sair");
+            System.out.println("0 - Exit");
             option = sc.nextInt();
 
             switch (option) {
